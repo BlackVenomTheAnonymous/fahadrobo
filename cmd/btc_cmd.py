@@ -1,6 +1,6 @@
 import requests
 
-def btc(update, context):
+def btc_cmd(update, context):
     response = requests.get("https://api.kucoin.com/api/v1/market/stats?symbol=BTC-USDT")
     if response.status_code == 200:
         data = response.json()["data"]
